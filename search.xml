@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[test]]></title>
+    <url>%2Fblog%2F2018%2F12%2F09%2Ftest%2F</url>
+    <content type="text"><![CDATA[##test 问题：假如ssh-key配置失败，那么只要以下步骤就能完全解决 首先，清除所有的key-pairssh-add -Drm -r ~/.ssh删除你在github中的public-key 重新生成ssh密钥对ssh-keygen -t rsa -C “xxx@xxx.com“ 接下来正常操作在github上添加公钥public-key:1、首先在你的终端运行 xclip -sel c ~/.ssh/id_rsa.pub将公钥内容复制到剪切板2、在github上添加公钥时，直接复制即可3、保存 测试：在终端 ssh -T git@github.com]]></content>
+      <categories>
+        <category>test</category>
+      </categories>
+      <tags>
+        <tag>test1</tag>
+        <tag>test2</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2Fblog%2F2018%2F12%2F09%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+  </entry>
+</search>
